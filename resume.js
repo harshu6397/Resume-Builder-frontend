@@ -30,5 +30,28 @@ submit.addEventListener("click", ()=>{
     let fName = document.getElementById("fname").value;
     let firstName = document.getElementById("firstName");
     firstName.innerHTML = fName;
+
+    //email
+    document.querySelector(".email").innerHTML = document.getElementById(".email").value
+    
+    //phone
+    document.getElementById("phone").innerHTML = document.getElementById(".phone").value
+
+    //zipcode
+    document.getElementById("zipcode").innerHTML = document.getElementById(".zipcode").value
+
+    //linkedin
+    document.getElementById("linkedin").innerHTML = document.getElementById(".linkedin").value
+
+    //country
+    document.getElementById("country").innerHTML = document.getElementById(".country").value
+
+    //dob
+    document.getElementById("dob").innerHTML = document.getElementById(".dob").value
+
+    //dobplace
+    document.getElementById("dobplace").innerHTML = document.getElementById(".dobplace").value
+
+
 })
 
