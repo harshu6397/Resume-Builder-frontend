@@ -1,72 +1,158 @@
+:root {
+    --theme-dark: #731895;
+    --theme-light: #e5a1ff;
+}
 
+::-webkit-scrollbar{
+    display: none;
+}
 
-body>div{
+body>div {
     height: 100%;
     overflow: hidden;
 }
 
-#navbar{
-    background-color: white;
+#navbar {
+    background-color: var(--theme-dark);
     display: flex;
     justify-content: space-between;
-    padding: 23px 50px;
-    position: absolute;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     z-index: 2;
 }
 
-#navbar ul li{
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all 1s ease-in;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 8px;
+}
+
+#logout {
+    color: red;
+}
+
+.dropdown-content a:hover {
+    background-color: #c2c2c2
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all .5s ease-in-out;
+}
+
+.dropdown:hover,
+#profile-logo:hover {
+    transition: all 1s ease-in;
+}
+
+.logo h1 {
+    color: white;
+}
+
+#profile-logo img {
+    width: 45px;
+}
+
+#navbar ul li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.content{
+.content {
     height: 100%;
 }
 
-.intro{
-    /* position: absolute;
-    top: 71px; */
+.intro {
     margin-top: 71px;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     height: fit-content;
     padding: 70px 0px;
-    background: linear-gradient(180deg, aqua, transparent);
+    background: linear-gradient(180deg, var(--theme-light), transparent);
 }
 
-.headline{
-    border: 1px solid red;
+.headline {
     width: 60%;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 0px 23px;
 }
-.illustration{
-    border: 1px solid red;
+
+#midText{
+    color: var(--theme-dark);
+}
+
+
+.illustration {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.illustration img{
+.illustration img {
     width: 400px;
 }
 
-.template-list{
+.template-list {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    margin: 100px 0px;
+    background-color: #ffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
 }
-.template-list img{
-    width: 300px;
-    height: 320px;
-    border-radius:5px ;
+
+.temp-card {
+    /* display: flex; */
+    /* width: 100%; */
+    perspective: 1000px;
+    padding: 50px;
+}
+
+.temp-img {
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.temp-card img {
+    width: 350px;
+    height: 390px;
+    box-shadow: 0 20px 20px rgb(0, 0, 0, 0.2), 0px 0px 50px rgb(0, 0, 0, 0.2);
+}
+
+.temp-card>img::after{
+    content: "Create Resume";
+    background-color: red;
+    display: block;
+    position:absolute;
+    z-index: 2;
 }

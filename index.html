@@ -12,12 +12,24 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <!-- navbar  -->
         <nav id="navbar">
-            <div class="logo">Resume Builder</div>
+            <div class="logo">
+                <h1>Resume Builder</h1>
+            </div>
             <ul>
-                <li><a href="#">Profile</a></li>
+                <li>
+                    <a id="profile-logo" href="#">
+                        <div class="dropdown">
+                            <img src="./assets/ui-user-profile.svg" alt="">
+                            <div class="dropdown-content">
+                                <a href="#">My Resume</a>
+                                <a id="logout" href="#">Log out</a>
+                            </div>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -25,19 +37,20 @@
             <div class="intro">
                 <!-- headline -->
                 <div class="headline">
-                    <!-- <h1>Build Your Resume That Can Stand</h1> -->
-                    <h1>Lorem ipsum dolor sit amet. lorem</h1>
+                    <h1>Build Your <span id="midText">Resume</span> That Can Stand</h1>
                 </div>
                 <div class="illustration">
                     <img src="./assets/resume.png" alt="illustration">
-                </div>
-
-                <!-- template list -->
-
+                </div> 
             </div>
+
+            <!-- template list -->
             <div class="template-list">
-                <img src="./assets/Temp2.png" alt="temp">
-                <img src="./assets/Temp2.png" alt="temp">
+                <div><h1>Templates</h1></div>
+                <div class="temp-card">
+                    <div class="temp-img"><img src="./assets/Temp2.png" alt="temp"></div>
+                    <div class="temp-img"><img src="./assets/Temp2.png" alt="temp"></div>
+                </div>
             </div>
         </section>
     </div>
