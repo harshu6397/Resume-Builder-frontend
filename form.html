@@ -15,117 +15,116 @@
 <body>
     <div class="container">
         <fieldset>
+            <legend class="field-lg">Fill Your Details here</legend>
             <div class="left-part">
-
-                <legend class="field-lg">Fill Your Details here</legend>
                 <form action="">
-                    <div class="main-detail" id="md1">
-                        <div>
-                            <label for="fname">First Name</label>
-                            <input type="text" name="fname" id="fname">
+                    <div id="personalDetails">
+                        <div class="main-detail" id="md1">
+                            <div>
+                                <label for="fname">First Name</label>
+                                <input type="text" name="fname" id="fname">
+                            </div>
+                            <div><label for="lname">Last Name</label>
+                                <input type="text" name="lname" id="lname">
+                            </div>
+                            <div><label for="domain">Domain</label>
+                                <input type="text" name="domain" id="domain">
+                            </div>
+                            <div><label for="profile">Describe Your Profile</label>
+                                <textarea name="profile" id="profile" cols="20" rows="5"></textarea>
+                            </div>
+                            <div><label for="address">Address</label>
+                                <input type="text" name="address" id="address">
+                            </div>
+                            <div><label for="zipcode">Zipcode</label>
+                                <input type="number" name="zipcode" id="zipcode">
+                            </div>
+                            <div><label for="phno">Phone No</label>
+                                <input type="number" name="phno" id="phone">
+                            </div>
+                            <div><label for="email"> Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div><label for="dobIn">Date-birth </label>
+                                <input type="date" name="dob" id="dobIn">
+                            </div>
+                            <div><label for="pb">Place of birth </label>
+                                <input type="text" id="pb">
+                            </div>
+                            <div><label for="profile-image">Image</label>
+                                <input type="file" name="profile-image" id="profile-image">
+                            </div>
+                            <div><label for="git-url">GitHub</label>
+                                <input type="url" name="" id="git-url">
+                            </div>
+                            <div><label for="linkedin">Linkedin</label>
+                                <input type="url" name="" id="linkedin">
+                            </div>
+                            <div><label for="language">language</label>
+                                <input type="url" name="" id="language">
+                            </div>
+                            <button type="button" class="btn save-next1" id="btn1">Save and Next</button>
                         </div>
-                        <div><label for="lname">Last Name</label>
-                            <input type="text" name="lname" id="lname">
-                        </div>
-                        <div><label for="domain">Domain</label>
-                            <input type="text" name="domain" id="domain">
-                        </div>
-                        <div><label for="profile">Describe Your Profile</label>
-                            <textarea name="profile" id="profile" cols="20" rows="5"></textarea>
-                        </div>
-                        <div><label for="address">Address</label>
-                            <input type="text" name="address" id="address">
-                        </div>
-                        <div><label for="zipcode">Zipcode</label>
-                            <input type="number" name="zipcode" id="zipcode">
-                        </div>
-                        <div><label for="phno">Phone No</label>
-                            <input type="number" name="phno" id="phone">
-                        </div>
-                        <div><label for="email"> Email</label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div><label for="dob">Date-birth </label>
-                            <input type="date" name="dob" id="dob">
-                        </div>
-                        <div><label for="pb">Place of birth </label>
-                            <input type="text" id="pb">
-                        </div>
-                        <div><label for="profile-image">Image</label>
-                            <input type="file" name="profile-image" id="profile-image">
-                        </div>
-                        <div><label for="git-url">GitHub</label>
-                            <input type="url" name="" id="git-url">
-                        </div>
-                        <div><label for="linkedin">Linkedin</label>
-                            <input type="url" name="" id="linkedin">
-                        </div>
-                        <button type="button" class="btn save-next1" id="btn1">Save and Next</button>
-                    </div>
-                    <div class="main-detail2">
-                        <div class="academic-detail">
-                            <h2>Academic Details</h2>
-                            <label for="10th">10th College Name</label>
-                            <input type="text" id="10th">
-                            <label for="12th">12th College Name</label>
-                            <input type="text" id="12th">
-                            <label for="gcn">Graduation College Name</label>
-                            <input type="text" id="gcn">
-                        </div>
-                        <div class="myproject">
-                            <H2>Projects</H2>
-                            <ul type="none">
 
-                                <li><label for="project">Project title</label>
-                                    <input type="text" class="project">
-                                    <label for="project-dc">Project-discription</label>
-                                    <textarea class="project-dc" cols="20" rows="5"></textarea>
-                                </li>
-                                <button type="button" class="btn add-pj">Add</button>
-                            </ul>
-                            <button type="button" class="btn save-next2">Save and Next</button>
-                        </div>
                     </div>
-                    <div class="main-detail3">
-                        <div class="exp">
-                            <H2>Experience</H2>
-                            <ul type="none">
-                                <li> <label for="exp">Company Name</label><input type="text" id="exp"><label
-                                        for="exp-dc">Describe
-                                        role</label>
-                                    <textarea name="" id="exp-dc" cols="20" rows="5"></textarea>
-                                </li>
-                                <button type="button" class="btn add-ex">Add</button>
-                            </ul>
+
+                    <div id="acadmicsDetails">
+                        <div class="main-detail2">
+                            <div class="academic-detail">
+                                <h2>Academic Details</h2>
+                                <label for="coll">School/College Name</label>
+                                <input type="text" class="coll">
+                                <label for="coll-add">Address</label>
+                                <textarea class="coll-add" rows="5"></textarea>
+
+                            </div>
+                            <div class="myproject">
+                                <H2>Projects</H2>
+                                <ul type="none">
+                                    <li><label for="project">Project title</label>
+                                        <input type="text" class="project">
+                                        <label for="project-dc">Project-discription</label>
+                                        <textarea class="project-dc" cols="20" rows="5"></textarea>
+                                    </li>
+                                    <button type="button" class="btn add-pj">Add</button>
+                                </ul>
+                                <button type="button" class="btn save-next2">Save and Next</button>
+                            </div>
                         </div>
-                        <div class="certficate-detail">
-                            <H2>Certification</H2><label for="cert">Cretifications Name</label>
-                            <input type="text" id="cert">
-                            <label for="cert-dc">Certificate Detail</label>
-                            <textarea 
-                                name="" 
-                                id="cert-dc" 
-                                cols="20"
-                                rows="2">
+                        <div class="main-detail3">
+                            <div class="exp">
+                                <H2>Experience</H2>
+                                <ul type="none">
+                                    <li>
+                                        <label for="exp">Company Name</label>
+                                        <input type="text" class="exp">
+                                        <label for="exp-dc">Describe
+                                            role
+                                        </label>
+                                        <textarea name="" class="exp-dc" cols="20" rows="5"></textarea>
+                                    </li>
+                                    <button type="button" class="btn add-ex">Add</button>
+                                </ul>
+                            </div>
+                            <div class="certficate-detail">
+                                <H2>Certification</H2><label for="cert">Cretifications Name</label>
+                                <input type="text" id="cert">
+                                <button type="button" class="btn add-cert">Add</button>
+                                </ul>
+                            </div>
+                            <div class="achive">
+                                <h2>Achivenments</h2>
+                                <label for="achiv">Achivenments-name</label>
+                                <textarea id="achiv" cols="20" rows="4">
                             </textarea>
-                            <button type="button" class="btn add-cert">Add</button>
-                            </ul>
+                                <button type="button" class="btn add-cert">Add</button><br>
+                            </div>
+                            <button type="button" class="btn btn-submit">submit</button>
                         </div>
-                        <div class="achive">
-                            <h2>Achivenments</h2>
-                            <label for="achiv">Achivenments-name</label>
-                            <textarea 
-                                name="" 
-                                id="achiv" 
-                                cols="20"
-                                rows="4">
-                            </textarea>
-                            <button type="button" class="btn add-cert">Add</button><br>
-                        </div>
-                        <button type="button" class="btn btn-submit">submit</button>
                     </div>
                 </form>
             </div>
+
 
             <!-- preview -->
             <div class="right-part">
@@ -137,48 +136,40 @@
                             <hr><br>
                             <div>
                                 <h3>Email: </h3>
-                                <div class="inline email"> xyx.gmail.com</div>
+                                <div class="inline" id="email-d"> xyx.gmail.com</div>
                             </div>
                             <div>
                                 <h3>Phone-no: </h3>
-                                <div class="inline phone"> +910000000000</div>
+                                <div class="inline " id="phone-d"> +91 0000000000</div>
                             </div>
                             <div>
                                 <h3>Address: </h3>
-                                <div class="inline zipcode"> XyZ 250001</div>
+                                <div class="inline " id="zipcode-d"> XyZ 250001</div>
                             </div>
                             <div>
                                 <h3>Linkedin: </h3>
-                                <div class="inline linkedin"> www.linked.com</div>
-                            </div>
-                            <div>
-                                <h3>Nationality: </h3>
-                                <div class="inline country"> Indian</div>
+                                <div class="inline " id="linkedin-d"> www.linked.com</div>
                             </div>
                             <div>
                                 <h3>Date-of-birth: </h3>
-                                <div class="inline dob"> DD/mm/yy</div>
+                                <div class="inline " id="dob-d"> DD/mm/yy</div>
                             </div>
                             <div>
                                 <h3>Palce Of Birth: </h3>
-                                <div class="inline dobplace"> Xyz</div>
+                                <div class="inline " id="dobplace-d"> Xyz</div>
                             </div><br>
                             <H3>Languages</H3>
                             <hr>
-                            <div>Hindi</div>
-                            <div>English</div><br>
-                            <h3>Hobbies</h3>
-                            <hr>
-                            <div>Cricket</div>
-                            <div>Reading,Books</div>
+                            <div id="lang">Hindi</div>
                         </div>
                     </div>
                     <div class="right">
                         <h1><span id="firstName">MY</span> <span class="lastName">Name</span> </h1>
-                        <h4>Lorem, ipsum. </h4>
+                        <h4 class="domain-d">Lorem, ipsum. </h4>
+
                         <div class="right-details">
                             <h2>Profile</h2>
-                            <div id="profile">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid at
+                            <div id="profile-d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid at
                                 recusandae laboriosam
                                 reprehenderit ab impedit, cum temporibus sunt facere velit placeat dolor ipsum debitis
                                 odio non
@@ -198,58 +189,42 @@
                                 <li>
                                     <h4>12th</h4>
                                     <div>
-                                        <h3 id="col2">College Name</h3>
-                                        <div id="col-d2">
+                                        <h3 id="col">College Name</h3>
+                                        <div id="col-d">
                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
                                             quibusdam.
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                            <h2>Internships</h2>
+                            <h2>Experience</h2>
                             <ul type="none">
                                 <li>
                                     <div>
-                                        <h3 id="org1">Company Name</h3>
-                                        <div class="org-d1">
+                                        <h3 id="org">Company Name</h3>
+                                        <div id="org-d">
                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
                                             quibusdam.
                                         </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h3 id="org2">Company Name</h3>
-                                        <div id="org-d2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                            Impedit, quibusdam.</div>
                                     </div>
                                 </li>
                             </ul>
                             <h2>Projects</h2>
                             <ul type="none">
                                 <li>
-                                    <h3 id="proj1">Project Name</h3>
-                                    <div id="proj-d2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
-                                        quibusdam.</div>
-                                </li>
-                                <li>
-
-                                    <h3 id="proj2">Project Name</h3>
-                                    <div id="proj-d2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+                                    <h3 id="proj">Project Name</h3>
+                                    <div id="proj-d">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
                                         quibusdam.</div>
                                 </li>
                             </ul>
                             <h2>Cretifications</h2>
-                            <ol type="i">
-                                <li id="certificate1">Aws cloud</li>
-                                <li id="certificate2">Aws cloud</li>
-                                <li id="certificate3">Aws cloud</li>
-                            </ol>
-                            <h2>Achivenments</h2>
-                            <ol>
-                                <li id="achivem-1">Lorem ipsum dolor sit amet.</li>
-                                <li id="achivem-2">Lorem ipsum dolor sit amet.</li>
-                            </ol>
+                            <ul>
+                                <li id="certificate">Aws cloud</li>
+                            </ul>
+                            <h2>Achivements</h2>
+                            <ul>
+                                <li id="achivem">Lorem ipsum dolor sit amet.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

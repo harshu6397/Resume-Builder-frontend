@@ -4,17 +4,17 @@ projectBTN.addEventListener("click", addProject);
 
 function addProject(){
     console.log("avs")
-    // let newPjLabelForTitle = document.createElement("label");
-    // let newPjInp = document.createElement("input");
-    // let newPjLabelForDisc = document.createElement("label");
-    // let newPjDisc = document.createElement("textarea");
-    // newPjInp.classList.add("project");
-    // newPjLabelForTitle.setAttribute("for","project");
-    // newPjInp.setAttribute("type","text");
-    // newPjDisc.classList.add("project-dc");
-    // newPjLabelForDisc.setAttribute("for","project-dc");
-    // newPjInp.setAttribute("cols","20");
-    // newPjInp.setAttribute("rows","5");
+    let newPjLabelForTitle = document.createElement("label");
+    let newPjInp = document.createElement("input");
+    let newPjLabelForDisc = document.createElement("label");
+    let newPjDisc = document.createElement("textarea");
+    newPjInp.classList.add("project");
+    newPjLabelForTitle.setAttribute("for","project");
+    newPjInp.setAttribute("type","text");
+    newPjDisc.classList.add("project-dc");
+    newPjLabelForDisc.setAttribute("for","project-dc");
+    newPjInp.setAttribute("cols","20");
+    newPjInp.setAttribute("rows","5");
 }
 
 // addingDetails();
@@ -26,32 +26,58 @@ function addProject(){
 
 const submit = document.querySelector(".btn-submit");
 submit.addEventListener("click", ()=>{
-    console.log("asdf")
-    let fName = document.getElementById("fname").value;
-    let firstName = document.getElementById("firstName");
-    firstName.innerHTML = fName;
+    // console.log("asdf")
 
     //email
-    document.querySelector(".email").innerHTML = document.getElementById(".email").value
+    document.getElementById("email-d").innerHTML = document.getElementById("email").value
+    
+    //domain
+    document.getElementById(".domain-d").innerHTML = document.getElementById("domain").value
     
     //phone
-    document.getElementById("phone").innerHTML = document.getElementById(".phone").value
+    document.getElementById("phone-d").innerHTML = document.getElementById("phone").value
 
     //zipcode
-    document.getElementById("zipcode").innerHTML = document.getElementById(".zipcode").value
+    document.getElementById("zipcode-d").innerHTML = document.getElementById("zipcode").value
 
     //linkedin
-    document.getElementById("linkedin").innerHTML = document.getElementById(".linkedin").value
+    document.getElementById("linkedin-d").innerHTML = document.getElementById("linkedin").value
 
-    //country
-    document.getElementById("country").innerHTML = document.getElementById(".country").value
-
+    //language
+    document.getElementById("lang-d").innerHTML = document.getElementById("language").value
+    
     //dob
-    document.getElementById("dob").innerHTML = document.getElementById(".dob").value
+    document.getElementById("dob-d").innerHTML = document.getElementById("dobIn").value
 
     //dobplace
-    document.getElementById("dobplace").innerHTML = document.getElementById(".dobplace").value
+    document.getElementById("dobplace-d").innerHTML = document.getElementById("pb").value
 
+    //first name
+    document.getElementById("firstName").innerHTML = document.getElementById("fname").value
+
+    //first name
+    document.getElementById("lastName").innerHTML = document.getElementById("lname").value
+    // disccription
+    document.getElementById("profile-d").innerHTML = document.getElementById("profile").value
+
+    // education
+    document.getElementById("col").innerHTML = document.querySelector(".coll").value
+    document.getElementById("col1-d").innerHTML = document.querySelector(".coll-add").value
+
+    // company name
+    document.getElementById("org").innerHTML = document.querySelector(".exp").value
+    document.getElementById("org-d").innerHTML = document.querySelector(".exp-dc").value
+    
+    // project name
+    document.getElementById("proj").innerHTML = document.querySelector(".project").value
+    document.getElementById("proj-d").innerHTML = document.querySelector(".project-dc").value
+    
+    // certification
+    document.getElementById("certificate").innerHTML = document.getElementById("cert").value
+    
+    // achivement
+    document.getElementById("achivem").innerHTML = document.getElementById("achiv").value
+    
 
 })
 

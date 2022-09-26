@@ -12,11 +12,6 @@
     float: right;
     
 }
-.left-part{
-    width: 50%;
-    float: left;
-    font-size: 20px;
-}
 
 input {
     display: block;
@@ -65,15 +60,42 @@ textarea {
 } */
 
 fieldset {
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     padding: 10px;
 }
 
+.left-part{
+    display: flex;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+input, textarea{
+    display: block;
+    width: 100% ;
+}
+
+#personalDetails{
+    width: 40%;
+}
+#acadmicsDetails{
+    width: 40%;
+}
+
 .field-lg {
     font-size: 50px;
-}   
+}
 
-
+.right-part, .con{
+    width:100%;
+}
 .con {
     padding: 30px;
     display: flex;
