@@ -15,23 +15,24 @@ body {
 }
 
 .full {
+    margin: 5rem;
     width: 100%;
     background-color: rgb(78, 197, 169);
-    margin: 0px;
-    display: grid;
-    grid-template-columns: 2fr 4fr;
+    display: flex;
 }
 
 .left {
+    color: rgb(223, 217, 217);
     position: initial;
-    background-color: rgb(70, 215, 138);
-    padding: 19px;
+    background-color: 395B64;
+    padding: 1.5rem;
+
 }
 
 .right {
     position: initial;
-    background-color: rgb(13, 216, 235);
-    padding: 19px;
+    background-color: #A5C9CA;
+    padding: 1.5rem;
 }
 
 .image,
@@ -50,4 +51,12 @@ body {
 
 .h2 {
     background-color: rgb(232, 234, 139);
+}
+
+.pj{
+    display: inline-block;
+}
+
+.border-radius{
+    border-radius: 5%;
 }
