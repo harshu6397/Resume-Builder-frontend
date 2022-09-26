@@ -12,12 +12,35 @@
 
 <body>
     <div class="container">
+        <!-- navbar  -->
+        <nav id="navbar">
+            <div class="logo">
+                <h1>Resume Builder</h1>
+            </div>
+            <ul>
+                <li>
+                    <a id="profile-logo" href="#">
+                        <div class="dropdown">
+                            <img src="./assets/ui-user-profile.svg" alt="">
+                            <div class="dropdown-content">
+                                <a href="#">My Resume</a>
+                                <a id="logout" href="#">Log out</a>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Preview  -->
         <div class="resume-preview">
 
         </div>
+
+        <!-- buttons -->
         <div class="buttons">
-            <button id="downloadBtn">Download</button>
-            <button id="saveBtn">Save</button>
+            <button id="downloadBtn" class="btn">Download</button>
+            <button id="saveBtn" class="btn">Save</button>
         </div>
     </div>
 </body>

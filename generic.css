@@ -9,3 +9,8 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+:root {
+    --theme-dark: #731895;
+    --theme-light: #e5a1ff;
+}
