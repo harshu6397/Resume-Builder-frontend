@@ -2,7 +2,6 @@
 
 body>div {
     height: 100%;
-    overflow: hidden;
 }
 
 /* navbar  */
@@ -79,12 +78,6 @@ a {
     color: black;
 }
 
-
-/* intro  */
-.content {
-    height: 100%;
-}
-
 .intro {
     margin-top: 71px;
     display: flex;
@@ -100,6 +93,7 @@ a {
     font-weight: 900;
     font-size: 4rem;
     padding: 0px 23px;
+    margin-left: 1.5rem;
 }
 
 #midText{
@@ -108,7 +102,8 @@ a {
 
 
 .illustration {
-    width: 40%;
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,14 +114,20 @@ a {
 }
 
 #template-list-h1{
-    text-align: center;
-    margin: 12px;
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+    font-size: 2.5rem;
+    text-decoration-line: underline;
+}
+
+.templates-container{
+    position: relative;
+    z-index: 1;
 }
 
 .template-list {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     padding: 100px 0px;
     background-color: #ffff;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
@@ -139,6 +140,13 @@ a {
     align-items: center;
     perspective: 1000px;
     padding: 50px;
+}
+
+.icon{
+    position: absolute;
+    top: 67px;
+    right: 65px;
+    z-index: 5;
 }
 
 .temp-img {
@@ -171,4 +179,42 @@ a {
     display: block;
     position:absolute;
     z-index: 2;
+}
+
+.create-resume-text{
+    background-color: rgba(37, 240, 30, 0.788);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: 700;
+    z-index: 2;
+    padding: .4rem .2rem;
+    border-radius: 7px;
+    opacity: 0;
+}
+
+.temp-card:hover .create-resume-text{
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.example-header-holder > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.preview{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: .4rem .2rem;
+    border-radius: 7px;
+    margin: 8rem auto 0 auto;
 }

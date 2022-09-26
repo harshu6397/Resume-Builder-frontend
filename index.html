@@ -8,10 +8,24 @@
     <title>Resume Builder</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="generic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
 
 </head>
 
 <body>
+    <div data-template-name="traditional" id="panel-doc-examples-cvrt" class="preview n-bg-overlay n-bg-shadow">
+        <div class="container-example-big-view">
+            <div class="n-container">
+                <div class="container-extra">
+                    <div class="example-header-holder">
+                    </div>
+                    <img alt="image example"
+                        src="https://d.novoresume.com/images/doc/preview/traditional-resume-template.png" style="border-radius: 20px;"><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <!-- navbar  -->
         <nav id="navbar">
@@ -41,20 +55,37 @@
                     <h1>Build Your <span id="midText">Resume</span> That Can Stand</h1>
                 </div>
                 <div class="illustration">
-                    <img src="./assets/resume.png" alt="illustration">
-                </div> 
+                    <img src="./assets/resume.svg" alt="illustration">
+                </div>
             </div>
 
             <!-- template list -->
-            <div><h1 id="template-list-h1">Templates</h1></div>
-            <div class="template-list">
-                <div class="temp-card">
-                    <div class="temp-img"><img src="./assets/Temp2.png" alt="temp"></div>
-                    <div class="temp-img"><img src="./assets/Temp1.png" alt="temp"></div>
+            <div class="templates-container">
+                <div>
+                    <h1 id="template-list-h1">Templates</h1>
+                </div>
+                <div class="template-list">
+                    <div class="temp-card">
+                        <i class="fa-solid fa-magnifying-glass-plus icon" onclick="return preview()"></i>
+                        <a href="./form.html"><span class="create-resume-text">Create your resume</span></a>
+                        <div class="temp-img"><img src="./assets/Temp2.png" alt="temp"></div>
+                    </div>
+                    <div class="temp-card">
+                        <a href="./form.html"><span class="create-resume-text" >Create your resume</span></a>
+                        <i class="fa-solid fa-magnifying-glass-plus icon" onclick="return preview()"></i>
+                        <div class="temp-img"><img src="./assets/Temp2.png" alt="temp"></div>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <script>
+        function preview() {
+            document.getElementById("panel-doc-examples-cvrt").style.display = "block";
+        }
+    </script>
+    
     <script src="script.js"></script>
 </body>
 
