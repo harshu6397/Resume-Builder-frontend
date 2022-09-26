@@ -1,17 +1,11 @@
-:root {
-    --theme-dark: #731895;
-    --theme-light: #e5a1ff;
-}
 
-::-webkit-scrollbar{
-    display: none;
-}
 
 body>div {
     height: 100%;
     overflow: hidden;
 }
 
+/* navbar  */
 #navbar {
     background-color: var(--theme-dark);
     display: flex;
@@ -85,6 +79,8 @@ a {
     color: black;
 }
 
+
+/* intro  */
 .content {
     height: 100%;
 }
