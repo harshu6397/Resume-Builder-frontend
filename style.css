@@ -157,6 +157,9 @@ a {
 .temp-img:hover{
     opacity: .8;
 }
+.profile-logo{
+    height: 50px;
+}
 
 /* .temp-img::before{
     content: "";
