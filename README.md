@@ -1,4 +1,6 @@
 # Resume-Builder-
+Demo link
+https://harshu6397.github.io/Resume-Builder-frontend/
 
 Home page 
 ![Resume-Builder1](https://user-images.githubusercontent.com/86229520/192426215-c1ae5f1a-f039-468e-8ae0-9f04e4ae6392.png)
@@ -14,5 +16,4 @@ downloarded pdf picture
 
 ![document-22-pdf](https://user-images.githubusercontent.com/86229520/192426401-8f1cd28d-24b5-4a79-b3e6-9a385171f394.png)
 
-demo link
-https://harshu6397.github.io/Resume-Builder-frontend/
+
