@@ -26,13 +26,13 @@ function addProject(){
 
 const submit = document.querySelector(".btn-submit");
 submit.addEventListener("click", ()=>{
-    // console.log("asdf")
+    console.log("asdf")
 
     //email
     document.getElementById("email-d").innerHTML = document.getElementById("email").value
     
     //domain
-    document.getElementById(".domain-d").innerHTML = document.getElementById("domain").value
+    // document.getElementById("domain-d").innerHTML = document.getElementById("domain").value
     
     //phone
     document.getElementById("phone-d").innerHTML = document.getElementById("phone").value
@@ -44,7 +44,7 @@ submit.addEventListener("click", ()=>{
     document.getElementById("linkedin-d").innerHTML = document.getElementById("linkedin").value
 
     //language
-    document.getElementById("lang-d").innerHTML = document.getElementById("language").value
+    document.getElementById("lang").innerHTML = document.getElementById("language").value
     
     //dob
     document.getElementById("dob-d").innerHTML = document.getElementById("dobIn").value
@@ -61,8 +61,8 @@ submit.addEventListener("click", ()=>{
     document.getElementById("profile-d").innerHTML = document.getElementById("profile").value
 
     // education
-    document.getElementById("col").innerHTML = document.querySelector(".coll").value
-    document.getElementById("col1-d").innerHTML = document.querySelector(".coll-add").value
+    document.getElementById("course").innerHTML = document.querySelector(".coll").value
+    document.getElementById("coll-d").innerHTML = document.querySelector(".coll-add").value
 
     // company name
     document.getElementById("org").innerHTML = document.querySelector(".exp").value

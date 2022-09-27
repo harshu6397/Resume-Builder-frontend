@@ -50,7 +50,7 @@ textarea {
 }
 
 .btn {
-    margin: 10px;
+    margin-top: 10px;
     padding: 5px;
 }
 
@@ -82,9 +82,13 @@ form{
 }
 
 input, textarea{
-    display: block;
     width: 100%  !important;
     height: 30px !important;
+    padding: 10px;
+}
+
+textarea{
+    height: 90px !important;
 }
 
 
@@ -99,6 +103,11 @@ input, textarea{
     font-size: 50px;
     text-align: center;
     padding: 10px;
+}
+
+button{
+    cursor: pointer;
+    width: 100%;
 }
 
 #submit{
