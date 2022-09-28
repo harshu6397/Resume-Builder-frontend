@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="generic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!-- <div data-template-name="traditional" id="panel-doc-examples-cvrt" class="preview n-bg-overlay n-bg-shadow">
+        <div class="container-example-big-view">
+            <div class="n-container">
+                <div class="container-extra">
+                    <div class="example-header-holder">
+                    </div>
+                    <img alt="image example"
+                        src="https://d.novoresume.com/images/doc/preview/traditional-resume-template.png" style="border-radius: 20px;"><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <!-- navbar  -->
+        <nav id="navbar">
+            <div class="logo">
+                <h1>Resume Builder</h1>
+            </div>
+            <ul>
+                <li>
+                    <a id="profile-logo" href="#">
+                        <div class="dropdown">
+                            <img id="profile-img" src="./assets/ui-user-profile.svg" alt="">
+                            <div class="dropdown-content">
+                                <span id="name"></span>
+                                <a href="#">My Resume</a>
+                                <a id="logout" href="#">Log out</a>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- intro -->
+        <section class="content">
+            <div class="intro">
+                <!-- headline -->
+                <div class="headline">
+                    <h1>Build Your <span id="midText">Resume</span> That Can Stand</h1>
+                </div>
+                <div class="illustration">
+                    <img src="./assets/resume.svg" alt="illustration">
+                </div>
+            </div>
+
+            <!-- template list -->
+            <div class="templates-container">
+                <div>
+                    <h1 id="template-list-h1">Templates</h1>
+                </div>
+                <div class="template-list">
+                    <div class="temp-card">
+                        <i class="fa-solid fa-magnifying-glass-plus icon" onclick="return preview()"></i>
+                        <a href="./form.html"><span class="create-resume-text">Create your resume</span></a>
+                        <div class="temp-img"><img src="./assets/Temp1.png" alt="temp"></div>
+                    </div>
+                    <div class="temp-card">
+                        <a href="./form.html"><span class="create-resume-text" >Create your resume</span></a>
+                        <i class="fa-solid fa-magnifying-glass-plus icon" onclick="return preview()"></i>
+                        <div class="temp-img"><img src="./assets/Temp2.png" alt="temp"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function preview() {
+            document.getElementById("panel-doc-examples-cvrt").style.display = "block";
+        }
+
+        let profileImg = document.getElementById("profile-img");
+        profileImg.addEventListener("mouseover", async () => {
+            // const response = await fetch("https://web-notebook-apis.herokuapp.com/api/auth/getuser", {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-Type": "application/json",
+            //         "auth-token" : localStorage.getItem("token")
+            //     }
+            // })
+            // const data = await response.json();
+            // console.log(data);
+            document.getElementById("name").innerHTML = localStorage.getItem("name");
+            // localStorage.setItem("name", data.name);
+        });
+
+        document.getElementById("logout").addEventListener("click", () => {
+            localStorage.removeItem("token");
+            window.location.href = "./index.html";
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
