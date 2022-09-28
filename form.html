@@ -87,7 +87,7 @@
                                     <label for="course">Course</label>
                                     <input type="text" class="course">
                                     <label for="coll-branch">Branch</label>
-                                    <input type="text" id="coll-branch">
+                                    <input type="text" class="coll-branch">
                                     <label for="coll">School/College Name and Address</label>
                                     <input type="text" class="coll">
                                     <button type="button" class="btn add-coll">Add</button>
@@ -108,14 +108,14 @@
                                     <H2>Experience</H2>
                                     <div class="expBox">
                                         <label for="exp">Company Name</label>
-                                        <input type="text" class="exp">
+                                        <input type="text" id="exp">
                                         <label for="exp-dc">Describe role</label>
                                         <textarea class="exp-dc" rows="5"></textarea>
                                     </div>
                                     <button type="button" class="btn add-ex">Add</button>
                                 </div>
                                 <div class="certficate-detail sec">
-                                    <H2>Certification</H2><label for="cert">Cretifications Name</label>
+                                    <label for="cert">Cretifications Name</label>
                                     <input type="text" class="cert">
                                     <button type="button" class="btn add-cert">Add</button>
                                     </ul>
@@ -130,11 +130,13 @@
                         </div>
                     </form>
                 </div>
-
                 <div id="submit">
                     <button type="button" class="btn btn-submit">submit</button>
+                    <a href="preview.html"><button class="pre">Preview</button></a>
+
                 </div>
 
+                <hr>
 
                 <!-- preview -->
                 <div id="right-part">
@@ -174,71 +176,87 @@
                             </div>
                         </div>
                         <div class="right">
-                            <h1><span id="firstName">MY</span> <span id="lastName">Name</span> </h1>
-                            <h4 id="domain-d">Lorem, ipsum. </h4>
-
-                            <div class="right-details">
-                                <h2>Profile</h2>
+                            <div>
+                                <h1><span id="firstName">MY</span> <span id="lastName">Name</span> </h1>
+                                <h2 id="domain-d">Lorem, ipsum. </h2>
                                 <div id="profile-d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid at
                                     recusandae laboriosam
                                     reprehenderit ab impedit, cum temporibus sunt facere velit placeat dolor ipsum
                                     debitis
                                     odio non
-                                    possimus, cumque sit consectetur.</div>
-                                <h2>Education</h2>
-                                <ul>
-                                    <li>
-                                        <h4 id="course">Course</h4>
-                                        <div>
-                                            <h3 id="coll-d">College Name</h3>
-                                            <div id="coll-add">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
-                                                quibusdam.
-                                            </div>
-                                        </div>
-                                    </li>
+                                    possimus, cumque sit consectetur.
+                                </div>
+                            </div>
 
-                                </ul>
-                                <h2>Experience</h2>
-                                <ul type="none">
-                                    <li>
-                                        <div>
-                                            <h3 id="org">Company Name</h3>
-                                            <div id="org-d">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
-                                                quibusdam.
+                            <div class="right-details">
+                                <div>
+                                    <h2>Education</h2>
+                                    <ul type="none">
+                                        <li>
+                                            <div>
+                                                <h3 id="course">Course</h3>
+                                                <h4 id="branch">branch</h4>
+                                                <h3 id="coll-d">College Name</h3>
+                                                <!-- <div id="coll-add">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+                                                    quibusdam.
+                                                </div> -->
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <h2>Projects</h2>
-                                <ul type="none">
-                                    <li>
-                                        <h3 id="proj">Project Name</h3>
-                                        <div id="proj-d">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                            Impedit,
-                                            quibusdam.</div>
-                                    </li>
-                                </ul>
-                                <h2>Cretifications</h2>
-                                <ul>
-                                    <li id="certificate">Aws cloud</li>
-                                </ul>
-                                <h2>Achivements</h2>
-                                <ul>
-                                    <li id="achivem">Lorem ipsum dolor sit amet.</li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Experience</h2>
+                                    <ul type="none">
+                                        <li>
+                                            <div>
+                                                <h3 id="org">Company Name</h3>
+                                                <div id="org-d">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+                                                    quibusdam.
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Projects</h2>
+                                    <ul type="none" class="projBoxRes">
+                                        <li>
+                                            <h3 id="proj">Project Name</h3>
+                                            <div id="proj-d">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                Impedit,
+                                                quibusdam.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Cretifications</h2>
+                                    <ul id="certificate">
+                                        <li>Aws cloud</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Achivements</h2>
+                                    <ul id="achivem">
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                    </ul>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="preview.html"><button class="pre">Preview</button></a>
             </fieldset>
         </div>
 
 
         <script src="resume.js"></script>
-
+    </div>  
 </body>
 
 </html>
