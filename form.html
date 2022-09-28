@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="template2.css">
+    <!-- <link rel="stylesheet" href="template2.css"> -->
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="generic.css">
@@ -14,230 +14,230 @@
 </head>
 
 <body>
-    
+
     <div class="container">
         <!-- navbar  -->
         <nav id="navbar">
             <div class="logo">
-                <a href="index.html"><h1>Resume Builder</h1></a>
+                <a href="index.html">
+                    <h1>Resume Builder</h1>
+                </a>
             </div>
         </nav>
 
-    <div class="container-2">
-        <fieldset>
-            <legend class="field-lg">Fill Your Details here</legend>
-            <div class="left-part">
-                <form action="">
-                    <div id="personalDetails">
-                        <h2>Academic Details</h2>
-                        <div class="main-detail" id="md1">
-                            <div>
-                                <label for="fname">First Name</label>
-                                <input type="text" name="fname" id="fname">
+        <div class="container-2">
+            <fieldset>
+                <legend class="field-lg">Fill Your Details Here</legend>
+                <div id="left-part">
+                    <form action="">
+                        <div id="personalDetails" class="sec">
+                            <h2>Personal Details</h2>
+                            <div class="main-detail" id="md1">
+                                <div>
+                                    <label for="fname">First Name</label>
+                                    <input type="text" name="fname" id="fname">
+                                </div>
+                                <div><label for="lname">Last Name</label>
+                                    <input type="text" name="lname" id="lname">
+                                </div>
+                                <div><label for="domain">Domain</label>
+                                    <input type="text" name="domain" id="domain">
+                                </div>
+                                <div><label for="profile">Describe Your Profile</label>
+                                    <textarea name="profile" id="profile" cols="20" rows="5"></textarea>
+                                </div>
+                                <div><label for="address">Address</label>
+                                    <input type="text" name="address" id="address">
+                                </div>
+                                <div><label for="zipcode">Zipcode</label>
+                                    <input type="number" name="zipcode" id="zipcode">
+                                </div>
+                                <div><label for="phno">Phone No</label>
+                                    <input type="number" name="phno" id="phone">
+                                </div>
+                                <div><label for="email"> Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div><label for="dobIn">Date-birth </label>
+                                    <input type="date" name="dob" id="dobIn">
+                                </div>
+                                <div><label for="pb">Place of birth </label>
+                                    <input type="text" id="pb">
+                                </div>
+                                <div><label for="profile-image">Image</label>
+                                    <input type="file" name="profile-image" id="profile-image">
+                                </div>
+                                <div><label for="git-url">GitHub</label>
+                                    <input type="url" name="" id="git-url">
+                                </div>
+                                <div><label for="linkedin">Linkedin</label>
+                                    <input type="url" name="" id="linkedin">
+                                </div>
+                                <div><label for="language">language</label>
+                                    <input type="url" name="" id="language">
+                                </div>
                             </div>
-                            <div><label for="lname">Last Name</label>
-                                <input type="text" name="lname" id="lname">
-                            </div>
-                            <div><label for="domain">Domain</label>
-                                <input type="text" name="domain" id="domain">
-                            </div>
-                            <div><label for="profile">Describe Your Profile</label>
-                                <textarea name="profile" id="profile" cols="20" rows="5"></textarea>
-                            </div>
-                            <div><label for="address">Address</label>
-                                <input type="text" name="address" id="address">
-                            </div>
-                            <div><label for="zipcode">Zipcode</label>
-                                <input type="number" name="zipcode" id="zipcode">
-                            </div>
-                            <div><label for="phno">Phone No</label>
-                                <input type="number" name="phno" id="phone">
-                            </div>
-                            <div><label for="email"> Email</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-                            <div><label for="dobIn">Date-birth </label>
-                                <input type="date" name="dob" id="dobIn">
-                            </div>
-                            <div><label for="pb">Place of birth </label>
-                                <input type="text" id="pb">
-                            </div>
-                            <div><label for="profile-image">Image</label>
-                                <input type="file" name="profile-image" id="profile-image">
-                            </div>
-                            <div><label for="git-url">GitHub</label>
-                                <input type="url" name="" id="git-url">
-                            </div>
-                            <div><label for="linkedin">Linkedin</label>
-                                <input type="url" name="" id="linkedin">
-                            </div>
-                            <div><label for="language">language</label>
-                                <input type="url" name="" id="language">
-                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div id="acadmicsDetails">
-                        <div class="main-detail2">
-                            <div class="academic-detail">
-                                <h2>Academic Details</h2>
-                                <label for="coll">School/College Name</label>
-                                <input type="text" class="coll">
-                                <label for="coll-add">Address</label>
-                                <textarea class="coll-add" rows="5"></textarea>
-
-                            </div>
-                            <div class="myproject">
-                                <H2>Projects</H2>
-                                <ul type="none">
-                                    <li><label for="project">Project title</label>
+                        <div id="acadmicsDetails">
+                            <div class="main-detail2">
+                                <div class="academic-detail sec">
+                                    <h2>Academic Details</h2>
+                                    <label for="course">Course</label>
+                                    <input type="text" class="course">
+                                    <label for="coll-branch">Branch</label>
+                                    <input type="text" id="coll-branch">
+                                    <label for="coll">School/College Name and Address</label>
+                                    <input type="text" class="coll">
+                                    <button type="button" class="btn add-coll">Add</button>
+                                </div>
+                                <div class="myproject sec">
+                                    <H2>Projects</H2>
+                                    <div class="projBox">
+                                        <label for="project">Project title</label>
                                         <input type="text" class="project">
                                         <label for="project-dc">Project-discription</label>
-                                        <textarea class="project-dc" cols="20" rows="5"></textarea>
-                                    </li>
+                                        <textarea class="project-dc" rows="5"></textarea>
+                                    </div>
                                     <button type="button" class="btn add-pj">Add</button>
-                                </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="main-detail3">
-                            <div class="exp">
-                                <H2>Experience</H2>
-                                <ul type="none">
-                                    <li>
+                            <div class="main-detail3 sec">
+                                <div class="sec">
+                                    <H2>Experience</H2>
+                                    <div class="expBox">
                                         <label for="exp">Company Name</label>
                                         <input type="text" class="exp">
-                                        <label for="exp-dc">Describe
-                                            role
-                                        </label>
-                                        <textarea name="" class="exp-dc" cols="20" rows="5"></textarea>
-                                    </li>
+                                        <label for="exp-dc">Describe role</label>
+                                        <textarea class="exp-dc" rows="5"></textarea>
+                                    </div>
                                     <button type="button" class="btn add-ex">Add</button>
-                                </ul>
-                            </div>
-                            <div class="certficate-detail">
-                                <H2>Certification</H2><label for="cert">Cretifications Name</label>
-                                <input type="text" id="cert">
-                                <button type="button" class="btn add-cert">Add</button>
-                                </ul>
-                            </div>
-                            <div class="achive">
-                                <h2>Achivenments</h2>
-                                <label for="achiv">Achivenments-name</label>
-                                <textarea id="achiv" cols="20" rows="4">
-                            </textarea>
-                                <button type="button" class="btn add-cert">Add</button><br>
+                                </div>
+                                <div class="certficate-detail sec">
+                                    <H2>Certification</H2><label for="cert">Cretifications Name</label>
+                                    <input type="text" class="cert">
+                                    <button type="button" class="btn add-cert">Add</button>
+                                    </ul>
+                                </div>
+                                <div class="achive sec">
+                                    <h2>Achivenments</h2>
+                                    <label for="achiv">Achivenments-name</label>
+                                    <input type="text" class="achiv">
+                                    <button type="button" class="btn add-achiv">Add</button><br>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
 
-            <div id="submit">
-                <button type="button" class="btn btn-submit" onclick="addproject()">submit</button>
-            </div>
+                <div id="submit">
+                    <button type="button" class="btn btn-submit">submit</button>
+                </div>
 
 
-            <!-- preview
-            <div class="right-part">
-                <div class="con">
-                    <div class="left">
-                        <img src="https://thispersondoesnotexist.com/image" alt="" class="profile">
-                        <div class="details">
-                            <h3>Contact</h3>
-                            <hr><br>
-                            <div>
-                                <h3>Email: </h3>
-                                <div class="inline" id="email-d"> xyx.gmail.com</div>
+                <!-- preview -->
+                <div id="right-part">
+                    <div class="con">
+                        <div class="left">
+                            <img src="https://thispersondoesnotexist.com/image" alt="" class="profile">
+                            <div class="details">
+                                <h3>Contact</h3>
+                                <hr><br>
+                                <div>
+                                    <h3>Email: </h3>
+                                    <div class="inline" id="email-d"> xyx.gmail.com</div>
+                                </div>
+                                <div>
+                                    <h3>Phone-no: </h3>
+                                    <div class="inline " id="phone-d"> +91 0000000000</div>
+                                </div>
+                                <div>
+                                    <h3>Address: </h3>
+                                    <div class="inline " id="zipcode-d"> XyZ 250001</div>
+                                </div>
+                                <div>
+                                    <h3>Linkedin: </h3>
+                                    <div class="inline " id="linkedin-d"> www.linked.com</div>
+                                </div>
+                                <div>
+                                    <h3>Date-of-birth: </h3>
+                                    <div class="inline " id="dob-d"> DD/mm/yy</div>
+                                </div>
+                                <div>
+                                    <h3>Palce Of Birth: </h3>
+                                    <div class="inline " id="dobplace-d"> Xyz</div>
+                                </div><br>
+                                <H3>Languages</H3>
+                                <hr>
+                                <div id="lang">Hindi</div>
                             </div>
-                            <div>
-                                <h3>Phone-no: </h3>
-                                <div class="inline " id="phone-d"> +91 0000000000</div>
-                            </div>
-                            <div>
-                                <h3>Address: </h3>
-                                <div class="inline " id="zipcode-d"> XyZ 250001</div>
-                            </div>
-                            <div>
-                                <h3>Linkedin: </h3>
-                                <div class="inline " id="linkedin-d"> www.linked.com</div>
-                            </div>
-                            <div>
-                                <h3>Date-of-birth: </h3>
-                                <div class="inline " id="dob-d"> DD/mm/yy</div>
-                            </div>
-                            <div>
-                                <h3>Palce Of Birth: </h3>
-                                <div class="inline " id="dobplace-d"> Xyz</div>
-                            </div><br>
-                            <H3>Languages</H3>
-                            <hr>
-                            <div id="lang">Hindi</div>
                         </div>
-                    </div>
-                    <div class="right">
-                        <h1><span id="firstName">MY</span> <span id="lastName">Name</span> </h1>
-                        <h4 id="domain-d">Lorem, ipsum. </h4>
+                        <div class="right">
+                            <h1><span id="firstName">MY</span> <span id="lastName">Name</span> </h1>
+                            <h4 id="domain-d">Lorem, ipsum. </h4>
 
-                        <div class="right-details">
-                            <h2>Profile</h2>
-                            <div id="profile-d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid at
-                                recusandae laboriosam
-                                reprehenderit ab impedit, cum temporibus sunt facere velit placeat dolor ipsum debitis
-                                odio non
-                                possimus, cumque sit consectetur.</div>
-                            <h2>Education</h2>
-                            <ul>
-                                <li>
-                                    <h4 id="course">Course</h4>
-                                    <div>
-                                        <h3 id="coll-d">College Name</h3>
-                                        <div id="coll-add">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
-                                            quibusdam.
+                            <div class="right-details">
+                                <h2>Profile</h2>
+                                <div id="profile-d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid at
+                                    recusandae laboriosam
+                                    reprehenderit ab impedit, cum temporibus sunt facere velit placeat dolor ipsum
+                                    debitis
+                                    odio non
+                                    possimus, cumque sit consectetur.</div>
+                                <h2>Education</h2>
+                                <ul>
+                                    <li>
+                                        <h4 id="course">Course</h4>
+                                        <div>
+                                            <h3 id="coll-d">College Name</h3>
+                                            <div id="coll-add">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+                                                quibusdam.
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                    
-                            </ul>
-                            <h2>Experience</h2>
-                            <ul type="none">
-                                <li>
-                                    <div>
-                                        <h3 id="org">Company Name</h3>
-                                        <div id="org-d">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
-                                            quibusdam.
+                                    </li>
+
+                                </ul>
+                                <h2>Experience</h2>
+                                <ul type="none">
+                                    <li>
+                                        <div>
+                                            <h3 id="org">Company Name</h3>
+                                            <div id="org-d">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+                                                quibusdam.
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <h2>Projects</h2>
-                            <ul type="none">
-                                <li>
-                                    <h3 id="proj">Project Name</h3>
-                                    <div id="proj-d">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
-                                        quibusdam.</div>
-                                </li>
-                            </ul>
-                            <h2>Cretifications</h2>
-                            <ul>
-                                <li id="certificate">Aws cloud</li>
-                            </ul>
-                            <h2>Achivements</h2>
-                            <ul>
-                                <li id="achivem">Lorem ipsum dolor sit amet.</li>
-                            </ul>
+                                    </li>
+                                </ul>
+                                <h2>Projects</h2>
+                                <ul type="none">
+                                    <li>
+                                        <h3 id="proj">Project Name</h3>
+                                        <div id="proj-d">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Impedit,
+                                            quibusdam.</div>
+                                    </li>
+                                </ul>
+                                <h2>Cretifications</h2>
+                                <ul>
+                                    <li id="certificate">Aws cloud</li>
+                                </ul>
+                                <h2>Achivements</h2>
+                                <ul>
+                                    <li id="achivem">Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
-            <center><a href="preview.html"><button class="pre">Preview</button></a></center>
-        </fieldset>
-    </div>
+                <a href="preview.html"><button class="pre">Preview</button></a>
+            </fieldset>
+        </div>
 
 
-    <script src="resume.js"></script>
+        <script src="resume.js"></script>
 
 </body>
 
