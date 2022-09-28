@@ -7,6 +7,7 @@ AddAcadmicsBTN.addEventListener("click", ()=>{
     NewExpNameLabel1.innerHTML = "Course"
     let NewExpNameInput1 = document.createElement("input")
     NewExpNameInput1.setAttribute("type","text");
+    NewExpNameInput1.setAttribute("placeholder","Type here");
     NewExpNameInput1.classList.add("course")
 
     // 2
@@ -15,6 +16,7 @@ AddAcadmicsBTN.addEventListener("click", ()=>{
     NewExpNameLabel2.innerHTML = "Branch"
     let NewExpNameInput2 = document.createElement("input")
     NewExpNameInput2.setAttribute("type","text");
+    NewExpNameInput2.setAttribute("placeholder","Type here");
     NewExpNameInput2.classList.add("coll-branch")
 
     // 3
@@ -23,6 +25,7 @@ AddAcadmicsBTN.addEventListener("click", ()=>{
     NewExpNameLabel3.innerHTML = "School/College Name and Address"
     let NewExpNameInput3 = document.createElement("input")
     NewExpNameInput3.setAttribute("type","text");
+    NewExpNameInput3.setAttribute("placeholder","Type here");
     NewExpNameInput3.classList.add("coll")
 
     let AcadmicBox = document.querySelector(".academic-detail")
@@ -47,6 +50,7 @@ projectBTN.addEventListener("click", ()=>{
     NewExpNameLabel.innerHTML = "Project title"
     let NewExpNameInput = document.createElement("input")
     NewExpNameInput.setAttribute("type","text");
+    NewExpNameInput.setAttribute("placeholder","Type here");
     NewExpNameInput.classList.add("project")
 
 
@@ -56,6 +60,7 @@ projectBTN.addEventListener("click", ()=>{
     NewExpNameLabelD.innerHTML = "Project-discription"
     let NewExpNameTxt = document.createElement("textarea")
     NewExpNameTxt.setAttribute("row","5");
+    NewExpNameTxt.setAttribute("placeholder","Type here");
     NewExpNameTxt.classList.add("project-dc") 
 
     let expBox = document.querySelector(".projBox")
@@ -74,6 +79,7 @@ ExpBTN.addEventListener("click", ()=>{
     NewExpNameLabel.innerHTML = "Company Name"
     let NewExpNameInput = document.createElement("input")
     NewExpNameInput.setAttribute("type","text");
+    NewExpNameInput.setAttribute("placeholder","Type here");
     NewExpNameInput.classList.add("exp")
 
 
@@ -83,6 +89,7 @@ ExpBTN.addEventListener("click", ()=>{
     NewExpNameLabelD.innerHTML = "Describe role"
     let NewExpNameTxt = document.createElement("textarea")
     NewExpNameTxt.setAttribute("row","5");
+    NewExpNameTxt.setAttribute("placeholder","Type here");
     NewExpNameTxt.classList.add("exp-dc") 
 
     let expBox = document.querySelector(".expBox")
@@ -99,6 +106,7 @@ CertBTN.addEventListener("click", ()=>{
     let certBox = document.querySelector(".certficate-detail")
     let newCert = document.createElement("input")
     newCert.classList.add('cert')
+    newCert.setAttribute("placeholder","Type here")
     certBox.insertBefore(newCert, CertBTN);
 })
 
@@ -109,6 +117,7 @@ const addAchivBtn = document.querySelector(".add-achiv");
 addAchivBtn.addEventListener("click", () => {
     let newAchive = document.createElement("input")
     newAchive.classList.add('achiv')
+    newAchive.setAttribute("placeholder","Type here")
     achiveBox.insertBefore(newAchive, addAchivBtn);
 })
 
