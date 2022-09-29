@@ -1,7 +1,7 @@
 // adding acadmics details
 const AddAcadmicsBTN = document.querySelector(".add-coll")
 AddAcadmicsBTN.addEventListener("click", ()=>{
-    // label and input
+    // label and input - course
     let NewExpNameLabel1 = document.createElement("label")
     NewExpNameLabel1.setAttribute("for","course");
     NewExpNameLabel1.innerHTML = "Course"
@@ -10,7 +10,7 @@ AddAcadmicsBTN.addEventListener("click", ()=>{
     NewExpNameInput1.setAttribute("placeholder","Type here");
     NewExpNameInput1.classList.add("course")
 
-    // 2
+    // 2 - branch
     let NewExpNameLabel2 = document.createElement("label")
     NewExpNameLabel2.setAttribute("for","coll-branch");
     NewExpNameLabel2.innerHTML = "Branch"
@@ -19,7 +19,7 @@ AddAcadmicsBTN.addEventListener("click", ()=>{
     NewExpNameInput2.setAttribute("placeholder","Type here");
     NewExpNameInput2.classList.add("coll-branch")
 
-    // 3
+    // 3 - college name
     let NewExpNameLabel3 = document.createElement("label")
     NewExpNameLabel3.setAttribute("for","coll");
     NewExpNameLabel3.innerHTML = "School/College Name and Address"
@@ -123,12 +123,10 @@ addAchivBtn.addEventListener("click", () => {
 
 const submit = document.querySelector(".btn-submit");
 submit.addEventListener("click", () => {
-    console.log("asdf")
-
     //email
     document.getElementById("email-d").innerHTML = document.getElementById("email").value
 
-    domain
+    // domain
     document.getElementById("domain-d").innerHTML = document.getElementById("domain").value
 
     //phone
@@ -159,6 +157,7 @@ submit.addEventListener("click", () => {
 
     // education
     document.getElementById("course").innerHTML = document.querySelector(".course").value
+    document.getElementById("branch").innerHTML = document.querySelector(".coll-branch").value
     document.getElementById("coll-d").innerHTML = document.querySelector(".coll").value
 
     // company name
@@ -168,13 +167,34 @@ submit.addEventListener("click", () => {
     // project name
     document.getElementById("proj").innerHTML = document.querySelector(".project").value
     document.getElementById("proj-d").innerHTML = document.querySelector(".project-dc").value
+    // let projInp = document.getElementsByClassName("cert");
+    // let projStr = "";
+    // for (let e of projInp) {   
+    //     projStr = projStr + `<li> ${e.value} </li>`
+    //     console.log(e)
+    // }
+    // document.getElementById("projBoxRes").innerHTML = projStr;
+
+
 
     // certification
-    document.getElementById("certificate").innerHTML = document.getElementById("cert")
+    let certInp = document.getElementsByClassName("cert");
+    let certStr = "";
+    for (let e of certInp) {   
+        certStr = certStr + `<li> ${e.value} </li>`
+        // console.log(e)
+    }
+    document.getElementById("certificate").innerHTML = certStr;
+
 
     // achivement
-    document.getElementById("achivem").innerHTML = document.querySelector(".achiv").value
-
+    let achivInp = document.getElementsByClassName("achiv");
+    let AchivStr = "";
+    for (let e of achivInp) {   
+        AchivStr = AchivStr + `<li> ${e.value} </li>`
+        console.log("yup")
+    }
+    document.getElementById("achivem").innerHTML = AchivStr;
 
 })
 
