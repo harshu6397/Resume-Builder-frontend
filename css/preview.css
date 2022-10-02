@@ -99,10 +99,12 @@ a {
 
 #right-part div{
     margin-bottom: 15px;
+    line-height: 13px;
 }
 
 h1{
     color: black;
+    margin-bottom: 5px;
 }
 
 .left .inline{
@@ -114,6 +116,7 @@ h1{
     font-size: 15px;
     font-weight: 300;
     color: black;
+    margin-bottom: 5px;
 }
 
 #right-part .right-details h3{
@@ -152,7 +155,10 @@ h1{
 .left {
     background-color: rgb(30, 117, 38);
     padding: 1rem;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     color: white;
     width: 35%;
 }
@@ -182,7 +188,7 @@ h1{
 
 
 img {
-    /* background-color: white; */
+    background-color: white;
     width: 100px;
     display: block;
     margin: auto;
@@ -198,12 +204,13 @@ img {
 }
 
 .right {
-    padding: 20px;
+    padding: 30px;
 }
 
 .right-detail {
     margin: 20px;
 }
+
 /* ----------------------------------------------------------------------- */
 /* buttons */
 .resume-preview{

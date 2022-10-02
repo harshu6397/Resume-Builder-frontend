@@ -100,6 +100,16 @@ ExpBTN.addEventListener("click", ()=>{
 })
 
 
+//adding skills
+const skillBtn = document.querySelector(".add-skill")
+skillBtn.addEventListener("click", ()=>{
+    let SkillBox = document.querySelector(".skills-detail")
+    let newSkill = document.createElement("input")
+    newSkill.classList.add('skill')
+    newSkill.setAttribute("placeholder","Type here")
+    SkillBox.insertBefore(newSkill, skillBtn);
+})
+
 //adding certificate
 const CertBTN = document.querySelector(".add-cert")
 CertBTN.addEventListener("click", ()=>{
@@ -124,58 +134,110 @@ addAchivBtn.addEventListener("click", () => {
 const submit = document.querySelector(".btn-submit");
 submit.addEventListener("click", () => {
     //email
-    document.getElementById("email-d").innerHTML = document.getElementById("email").value
+    // document.getElementById("email-d").innerHTML = document.getElementById("email").value
+    window.localStorage.setItem(("email-d"), document.getElementById("email").value)
 
     // domain
-    document.getElementById("domain-d").innerHTML = document.getElementById("domain").value
+    // document.getElementById("domain-d").innerHTML = document.getElementById("domain").value
+    window.localStorage.setItem(("domain-d"), document.getElementById("domain").value)
 
     //phone
-    document.getElementById("phone-d").innerHTML = document.getElementById("phone").value
+    // document.getElementById("phone-d").innerHTML = document.getElementById("phone").value
+    window.localStorage.setItem(("phone-d"), document.getElementById("phone").value)
+
+    // Address
+    // document.getElementById("address-d").innerHTML = document.getElementById("address").value
+    window.localStorage.setItem(("address-d"), document.getElementById("address").value)
 
     //zipcode
-    document.getElementById("zipcode-d").innerHTML = document.getElementById("zipcode").value
+    // document.getElementById("zipcode-d").innerHTML = document.getElementById("zipcode").value
+    window.localStorage.setItem(("zipcode-d"), document.getElementById("zipcode").value)
 
     //linkedin
-    document.getElementById("linkedin-d").innerHTML = document.getElementById("linkedin").value
+    // document.getElementById("linkedin-d").innerHTML = document.getElementById("linkedin").value
+    window.localStorage.setItem(("linkedin-d"), document.getElementById("linkedin").value)
+
+    //github
+    // document.getElementById("github-d").innerHTML = document.getElementById("github").value
+    window.localStorage.setItem(("github-d"), document.getElementById("github").value)
 
     //language
-    document.getElementById("lang").innerHTML = document.getElementById("language").value
+    // document.getElementById("lang").innerHTML = document.getElementById("language").value
+    window.localStorage.setItem(("lang"), document.getElementById("language").value)
 
     //dob
-    document.getElementById("dob-d").innerHTML = document.getElementById("dobIn").value
+    // document.getElementById("dob-d").innerHTML = document.getElementById("dobIn").value
+    window.localStorage.setItem(("dob-d"), document.getElementById("dobIn").value)
+
 
     //dobplace
-    document.getElementById("dobplace-d").innerHTML = document.getElementById("pb").value
+    // document.getElementById("dobplace-d").innerHTML = document.getElementById("pb").value
+    window.localStorage.setItem(("dobplace-d"), document.getElementById("pb").value)
 
-    //first name
-    document.getElementById("firstName").innerHTML = document.getElementById("fname").value
 
-    //first name
-    document.getElementById("lastName").innerHTML = document.getElementById("lname").value
+//first name
+    // document.getElementById("firstName").innerHTML = document.getElementById("fname").value
+
+    // new method
+    window.localStorage.setItem(("firstName"), document.getElementById("fname").value)
+
+    // document.getElementById("firstName").innerHTML = window.localStorage.getItem('firstName')
+    // console.log(window.localStorage.getItem('firstName'))
+    
+
+    //last name
+    // document.getElementById("lastName").innerHTML = document.getElementById("lname").value
+    window.localStorage.setItem(("lastName"), document.getElementById("lname").value)
+
+
     // disccription
-    document.getElementById("profile-d").innerHTML = document.getElementById("profile").value
+    // document.getElementById("profile-d").innerHTML = document.getElementById("profile").value
+    window.localStorage.setItem(("profile-d"), document.getElementById("profile").value)
 
     // education
-    document.getElementById("course").innerHTML = document.querySelector(".course").value
-    document.getElementById("branch").innerHTML = document.querySelector(".coll-branch").value
-    document.getElementById("coll-d").innerHTML = document.querySelector(".coll").value
+    // document.getElementById("course").innerHTML = document.querySelector(".course").value
+    // document.getElementById("branch").innerHTML = document.querySelector(".coll-branch").value
+    // document.getElementById("coll-d").innerHTML = document.querySelector(".coll").value
+
+    window.localStorage.setItem(("course"), document.querySelector(".course").value)
+    window.localStorage.setItem(("branch"), document.querySelector(".coll-branch").value)
+    window.localStorage.setItem(("coll-d"), document.querySelector(".coll").value)
 
     // company name
-    document.getElementById("org").innerHTML = document.getElementById("exp").value
-    document.getElementById("org-d").innerHTML = document.querySelector(".exp-dc").value
+    // document.getElementById("org").innerHTML = document.getElementById("exp").value
+    // document.getElementById("org-d").innerHTML = document.querySelector(".exp-dc").value
 
-    // project name
-    document.getElementById("proj").innerHTML = document.querySelector(".project").value
-    document.getElementById("proj-d").innerHTML = document.querySelector(".project-dc").value
-    // let projInp = document.getElementsByClassName("cert");
-    // let projStr = "";
+    window.localStorage.setItem(("org"), document.getElementById("exp").value)
+    window.localStorage.setItem(("org-d"), document.querySelector(".exp-dc").value)
+
+// project name
+    // document.getElementById("proj").innerHTML = document.querySelector(".project").value
+    // document.getElementById("proj-d").innerHTML = document.querySelector(".project-dc").value
+    // let projInp = document.getElementsByClassName("project");
+    // let projNameStr = "";
     // for (let e of projInp) {   
-    //     projStr = projStr + `<li> ${e.value} </li>`
+    //     projNameStr = projNameStr + `<li> ${e.value} </li>`
     //     console.log(e)
     // }
-    // document.getElementById("projBoxRes").innerHTML = projStr;
+    document.getElementsByClassName("project-dc");
+    let projectsArr = [];
+    let project = {
+        title: document.getElementsByClassName(".project").value,
+        discription: document.getElementsByClassName(".project-dc").value
+    }
+    projectsArr.push(project);
+    localStorage.setItem("MyProjects", JSON.stringify(projectsArr));
+    
 
 
+    // Skills
+    let SkillInp = document.getElementsByClassName("skill");
+    let skillStr = "";
+    for (let e of SkillInp) {   
+        skillStr = skillStr + `<li> ${e.value} </li>`
+    }
+    document.getElementById("skills").innerHTML = skillStr;
+    window.localStorage.setItem(("skills"), skillStr)   
 
     // certification
     let certInp = document.getElementsByClassName("cert");
@@ -185,6 +247,9 @@ submit.addEventListener("click", () => {
         // console.log(e)
     }
     document.getElementById("certificate").innerHTML = certStr;
+    console.log(certStr)
+    window.localStorage.setItem(("certificate"), certStr)
+
 
 
     // achivement
@@ -192,9 +257,8 @@ submit.addEventListener("click", () => {
     let AchivStr = "";
     for (let e of achivInp) {   
         AchivStr = AchivStr + `<li> ${e.value} </li>`
-        console.log("yup")
     }
-    document.getElementById("achivem").innerHTML = AchivStr;
+    // document.getElementById("achivem").innerHTML = AchivStr;
+    window.localStorage.setItem("achievements", AchivStr)
 
 })
-

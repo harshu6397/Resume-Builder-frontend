@@ -67,8 +67,9 @@
                                 <div><label for="profile-image">Image</label>
                                     <input type="file" name="profile-image" id="profile-image" placeholder="Type here">
                                 </div>
-                                <div><label for="git-url">GitHub</label>
-                                    <input type="url" name="" id="git-url" placeholder="Type here">
+                                <div>
+                                    <label for="github">GitHub</label>
+                                    <input type="url" name="" id="github" placeholder="Type here">
                                 </div>
                                 <div><label for="linkedin">Linkedin</label>
                                     <input type="url" name="" id="linkedin" placeholder="Type here">
@@ -78,6 +79,12 @@
                                 </div>
                             </div>
 
+                            <div class="skills-detail sec">
+                                <h2>Skills</h2>
+                                <label for="skill">Skills</label>
+                                <input type="text" class="skill" placeholder="Type here">
+                                <button type="button" class="btn add-skill">Add</button>
+                            </div>
                         </div>
 
                         <div id="acadmicsDetails">
@@ -115,10 +122,10 @@
                                     <button type="button" class="btn add-ex">Add</button>
                                 </div>
                                 <div class="certficate-detail sec">
+                                    <h2>Certificates</h2>
                                     <label for="cert">Cretifications Name</label>
                                     <input type="text" class="cert" placeholder="Type here">
                                     <button type="button" class="btn add-cert">Add</button>
-                                    </ul>
                                 </div>
                                 <div class="achive sec">
                                     <h2>Achivenments</h2>
@@ -131,8 +138,8 @@
                     </form>
                 </div>
                 <div id="submit">
-                    <button type="button" class="btn btn-submit">submit</button>
-                    <a href="preview.html"><button class="pre">Preview</button></a>
+                    <button type="button" class="btn btn-submit">Preview</button>
+                    <a href="preview.html"><button class="pre">Submit</button></a>
 
                 </div>
 
@@ -156,6 +163,10 @@
                                 </div>
                                 <div>
                                     <h3>Address: </h3>
+                                    <div class="inline " id="address-d"> XyZ 250001</div>
+                                </div>
+                                <div>
+                                    <h3>Zipcode: </h3>
                                     <div class="inline " id="zipcode-d"> XyZ 250001</div>
                                 </div>
                                 <div>
@@ -163,8 +174,12 @@
                                     <div class="inline " id="linkedin-d"> www.linked.com</div>
                                 </div>
                                 <div>
+                                    <h3>github </h3>
+                                    <div class="inline " id="github-d"> www.github.com</div>
+                                </div>
+                                <div>
                                     <h3>Date-of-birth: </h3>
-                                    <div class="inline " id="dob-d"> DD/mm/yy</div>
+                                    <div class="inline " id="dob-d"> DD/MM/YYYY</div>
                                 </div>
                                 <div>
                                     <h3>Palce Of Birth: </h3>
@@ -229,8 +244,17 @@
                                             <h3 id="proj">Project Name</h3>
                                             <div id="proj-d">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                                 Impedit,
-                                                quibusdam.</div>
+                                                quibusdam.
+                                            </div>
                                         </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h2>Skills</h2>
+                                    <ul id="skills">
+                                        <li>java</li>
+                                        <li>c++</li>
                                     </ul>
                                 </div>
 
@@ -247,7 +271,6 @@
                                         <li>Lorem ipsum dolor sit amet.</li>
                                     </ul>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -257,6 +280,7 @@
 
 
         <script src="./js/resume.js"></script>
+        <!-- <script src="./js/preview.js"></script> -->
     </div>  
 </body>
 
