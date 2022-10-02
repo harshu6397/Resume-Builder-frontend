@@ -130,7 +130,7 @@ div fieldset .pre, .btn-submit{
 #right-part {
     font-size: 10px;
     float: right;
-
+    display: none;
 }
 
 #right-part div{
